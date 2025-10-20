@@ -1,0 +1,93 @@
+10:37:05 **** Incremental Build of configuration Debug for project Ardupilot-v1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F427VITx -DSTM32 -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Ardupilot-v1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\favas\OneDrive\Documents\7.DroneProject\stm32_ardupilot_workspace\Ardupilot-v1\STM32F427VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ardupilot-v1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ardupilot-v1.elf
+ 
+arm-none-eabi-size  Ardupilot-v1.elf 
+arm-none-eabi-objdump -h -S Ardupilot-v1.elf  > "Ardupilot-v1.list"
+   text	   data	    bss	    dec	    hex	filename
+   3404	     92	   1900	   5396	   1514	Ardupilot-v1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ardupilot-v1.list
+ 
+10:37:15 **** Incremental Build of configuration Debug for project Ardupilot-v1 ****
+make -j8 all 
+arm-none-eabi-size  Ardupilot-v1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	     92	   1900	   5396	   1514	Ardupilot-v1.elf
+Finished building: default.size.stdout
+ 
+10:41:06 **** Build of configuration Debug for project Ardupilot-v1 ****
+make -j8 all 
+arm-none-eabi-size  Ardupilot-v1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	     92	   1900	   5396	   1514	Ardupilot-v1.elf
+Finished building: default.size.stdout
+ 
+09:43:04 **** Build of configuration Debug for project Ardupilot-v1 ****
+make -j8 all 
+arm-none-eabi-size  Ardupilot-v1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	     92	   1900	   5396	   1514	Ardupilot-v1.elf
+Finished building: default.size.stdout
+ 
+09:43:13 **** Incremental Build of configuration Debug for project Ardupilot-v1 ****
+make -j8 all 
+arm-none-eabi-size  Ardupilot-v1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	     92	   1900	   5396	   1514	Ardupilot-v1.elf
+Finished building: default.size.stdout
+ 
+10:07:59 **** Build of configuration Debug for project Ardupilot-v1 ****
+make -j8 all 
+arm-none-eabi-size  Ardupilot-v1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	     92	   1900	   5396	   1514	Ardupilot-v1.elf
+Finished building: default.size.stdout
+ 
+10:08:25 **** Incremental Build of configuration Debug for project Ardupilot-v1 ****
+make -j8 all 
+arm-none-eabi-size  Ardupilot-v1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	     92	   1900	   5396	   1514	Ardupilot-v1.elf
+Finished building: default.size.stdout
+ 
+11:20:25 **** Clean-only build of configuration Debug for project Ardupilot-v1 ****
+make -j8 clean 
+rm -rf ./Startup/startup_stm32f427vitx.d ./Startup/startup_stm32f427vitx.o
+rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf Ardupilot-v1.elf Ardupilot-v1.list Ardupilot-v1.map default.size.stdout
+ 
+11:20:25 **** Incremental Build of configuration Debug for project Ardupilot-v1 ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f427vitx.d" -MT"Startup/startup_stm32f427vitx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f427vitx.o" "../Startup/startup_stm32f427vitx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F427VITx -DSTM32 -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F427VITx -DSTM32 -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F427VITx -DSTM32 -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Ardupilot-v1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\favas\OneDrive\Documents\7.DroneProject\stm32_ardupilot_repo\Ardupilot-v1\STM32F427VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ardupilot-v1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ardupilot-v1.elf
+ 
+arm-none-eabi-size  Ardupilot-v1.elf 
+arm-none-eabi-objdump -h -S Ardupilot-v1.elf  > "Ardupilot-v1.list"
+   text	   data	    bss	    dec	    hex	filename
+   3404	     92	   1900	   5396	   1514	Ardupilot-v1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ardupilot-v1.list
+ 
+11:24:45 **** Incremental Build of configuration Debug for project Ardupilot-v1 ****
+make -j8 all 
+arm-none-eabi-size  Ardupilot-v1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	     92	   1900	   5396	   1514	Ardupilot-v1.elf
+Finished building: default.size.stdout
+ 
+11:26:28 **** Incremental Build of configuration Debug for project Ardupilot-v1 ****
+make -j8 all 
+arm-none-eabi-size  Ardupilot-v1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3404	     92	   1900	   5396	   1514	Ardupilot-v1.elf
+Finished building: default.size.stdout
+ 
