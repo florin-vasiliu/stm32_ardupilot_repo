@@ -1,0 +1,10 @@
+12:33:26 **** Incremental Build of configuration Debug for project scheduler_implementation ****
+make -j8 all 
+arm-none-eabi-size  scheduler_implementation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3944	     92	   1900	   5936	   1730	scheduler_implementation.elf
+Finished building: default.size.stdout
+ 
+
+12:33:26 Build Finished. 0 errors, 0 warnings. (took 246ms)
+
